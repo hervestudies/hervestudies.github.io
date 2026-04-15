@@ -3,9 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Herve Ahishakiye</title>
+  <title>Herve Ahishakiye | Portfolio</title>
 
-  <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
   <style>
@@ -17,108 +16,213 @@
     }
 
     body {
-      background: linear-gradient(135deg, #4facfe, #00f2fe);
-      min-height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      background: #f5f7fb;
+      color: #333;
     }
 
-    .card {
-      background: white;
-      padding: 50px;
-      border-radius: 25px;
+    .container {
+      max-width: 1000px;
+      margin: 40px auto;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+      overflow: hidden;
+    }
+
+    /* HEADER */
+    .header {
+      background: #1e3a8a;
+      color: white;
       text-align: center;
-      width: 95%;
-      max-width: 500px;
-      box-shadow: 0 15px 40px rgba(0,0,0,0.25);
+      padding: 40px 20px;
     }
 
-    .profilepic {
-      width: 160px;
-      height: 160px;
-      border-radius: 50%;
-      object-fit: cover;
-      margin-bottom: 20px;
-      border: 5px solid #4facfe;
-    }
-
-    h2 {
-      margin-bottom: 15px;
+    .logo {
+      font-size: 28px;
       font-weight: 700;
+      letter-spacing: 2px;
+      margin-bottom: 10px;
+    }
+
+    .header img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      border: 4px solid white;
+      margin-top: 10px;
+    }
+
+    .header h1 {
+      margin-top: 15px;
       font-size: 28px;
     }
 
-    p {
+    .header p {
       font-size: 16px;
-      color: #555;
-      margin-bottom: 30px;
-      line-height: 1.6;
+      opacity: 0.9;
     }
 
-    .btn {
-      display: block;
-      margin: 15px auto;
-      padding: 15px;
-      border-radius: 35px;
-      background: #111;
+    /* BODY GRID */
+    .content {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+    }
+
+    .left {
+      background: #f1f5f9;
+      padding: 25px;
+    }
+
+    .right {
+      padding: 25px;
+    }
+
+    h2 {
+      font-size: 18px;
+      margin-bottom: 10px;
+      color: #1e3a8a;
+      border-bottom: 2px solid #ddd;
+      padding-bottom: 5px;
+    }
+
+    p, li {
+      font-size: 14px;
+      margin-bottom: 8px;
+    }
+
+    ul {
+      list-style: none;
+    }
+
+    .skills span {
+      display: inline-block;
+      background: #1e3a8a;
       color: white;
+      padding: 5px 10px;
+      border-radius: 20px;
+      margin: 5px 5px 0 0;
+      font-size: 12px;
+    }
+
+    .links a {
+      display: block;
       text-decoration: none;
-      font-size: 16px;
-      width: 80%;
+      color: white;
+      background: #1e3a8a;
+      padding: 10px;
+      border-radius: 8px;
+      margin-bottom: 10px;
+      text-align: center;
       transition: 0.3s;
     }
 
-    .btn:hover {
-      background: #4facfe;
-      transform: scale(1.08);
+    .links a:hover {
+      background: #2563eb;
     }
 
-    footer {
-      margin-top: 25px;
-      font-size: 14px;
-      color: #888;
+    .job {
+      margin-bottom: 15px;
     }
 
-    /* Make it even bigger on large screens */
-    @media (min-width: 768px) {
-      .card {
-        max-width: 600px;
-        padding: 60px;
-      }
+    .job h3 {
+      font-size: 16px;
+      margin-bottom: 5px;
+    }
 
-      h2 {
-        font-size: 32px;
-      }
+    .job span {
+      font-size: 12px;
+      color: gray;
+    }
 
-      p {
-        font-size: 18px;
-      }
-
-      .btn {
-        font-size: 18px;
-        padding: 18px;
+    @media(max-width: 768px) {
+      .content {
+        grid-template-columns: 1fr;
       }
     }
   </style>
 </head>
 
 <body>
-  <div class="card">
-    <img src="networkengineer.jpg" class="profilepic" alt="Profile Picture">
 
-    <h2>Herve Ahishakiye</h2>
-    <p>
-      Hello! I am an undergraduate student specializing in <b>Networking Engineering</b><br>
-      and <b>Web Development</b>. I am passionate about building modern websites
-      and managing network systems.
-    </p>
+<div class="container">
 
-    <a href="https://www.instagram.com/herve/" target="_blank" class="btn">Instagram</a>
-    <a href="https://www.linkedin.com/in/herveahishakiye/" target="_blank" class="btn">LinkedIn</a>
-    <a href="https://github.com/herveahishakiye" target="_blank" class="btn">GitHub</a>
-
-    <footer>© 2026 Herve Ahishakiye</footer>
+  <!-- HEADER -->
+  <div class="header">
+    <div class="logo">HA</div>
+    <img src="networkengineer.jpg" alt="Profile">
+    <h1>Herve Ahishakiye</h1>
+    <p>Networking Engineer | Web Developer</p>
   </div>
+
+  <!-- CONTENT -->
+  <div class="content">
+
+    <!-- LEFT SIDE -->
+    <div class="left">
+
+      <h2>Contact</h2>
+      <p>Email: herve@example.com</p>
+      <p>Phone: +250 785 887 205 </p>
+      <p>Location: Kigali, Rwanda</p>
+
+      <h2>Skills</h2>
+      <div class="skills">
+        <span>HTML</span>
+        <span>CSS</span>
+        <span>JavaScript</span>
+        <span>Networking</span>
+        <span>Routing</span>
+        <span>Cybersecurity</span>
+      </div>
+
+      <h2>Links</h2>
+      <div class="links">
+        <a href="https://www.instagram.com/herve/" target="_blank">Instagram</a>
+        <a href="https://www.linkedin.com/in/herveahishakiye/" target="_blank">LinkedIn</a>
+        <a href="https://github.com/herveahishakiye" target="_blank">GitHub</a>
+      </div>
+
+    </div>
+
+    <!-- RIGHT SIDE -->
+    <div class="right">
+
+      <h2>Profile</h2>
+      <p>
+        I am an undergraduate student with strong interest in networking engineering and web development. I enjoy building modern web applications and designing efficient network systems.
+      </p>
+
+      <h2>Education</h2>
+      <div class="job">
+        <h3>Bachelor's Degree in Networking</h3>
+        <span>University Name | 2022 - Present</span>
+      </div>
+
+      <h2>Experience</h2>
+      <div class="job">
+        <h3>Junior Web Developer</h3>
+        <span>Company Name | 2024 - Present</span>
+        <p>Worked on building responsive websites and improving UI/UX.</p>
+      </div>
+
+      <div class="job">
+        <h3>Network Intern</h3>
+        <span>Company Name | 2023</span>
+        <p>Assisted in network setup, troubleshooting, and maintenance.</p>
+      </div>
+
+      <h2>Projects</h2>
+      <ul>
+        <li>✔ Personal Portfolio Website</li>
+        <li>✔ Student Grade Calculator (PHP)</li>
+        <li>✔ Network Simulation Project</li>
+      </ul>
+
+    </div>
+
+  </div>
+
+</div>
+
 </body>
 </html>
